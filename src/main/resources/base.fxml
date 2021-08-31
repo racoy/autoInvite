@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="destGroupField" prefHeight="900.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+   <children>
+      <TextField fx:id="firstAccField" layoutX="234.0" layoutY="109.0" prefHeight="31.0" prefWidth="59.0" text="190" />
+      <TextField fx:id="invPlanField" layoutX="234.0" layoutY="154.0" prefHeight="29.0" prefWidth="59.0" text="100" />
+      <TextField editable="false" layoutX="24.0" layoutY="109.0" text="номер 1 акка" />
+      <TextField editable="false" layoutX="24.0" layoutY="154.0" text="количество людей" />
+      <TextField editable="false" layoutX="22.0" layoutY="251.0" text="целевая группа" />
+      <TextField alignment="CENTER" editable="false" layoutX="793.0" layoutY="14.0" prefHeight="40.0" prefWidth="330.0" text="Список аккаунтов">
+         <font>
+            <Font name="System Bold Italic" size="23.0" />
+         </font>
+      </TextField>
+      <TextArea fx:id="accList" layoutX="630.0" layoutY="77.0" prefHeight="791.0" prefWidth="656.0" text="Список пользователей" />
+      <TextField editable="false" layoutX="22.0" layoutY="203.0" text="базовый адрес" />
+      <TextField fx:id="baseAddresField" layoutX="232.0" layoutY="203.0" prefHeight="31.0" prefWidth="273.0" text="http://localhost:9120" />
+      <Button fx:id="goInviteBtn" layoutX="344.0" layoutY="103.0" mnemonicParsing="false" onAction="#goInvite" prefHeight="75.0" prefWidth="249.0" text="go invite">
+         <font>
+            <Font name="Bell MT" size="33.0" />
+         </font>
+      </Button>
+      <TextField layoutX="20.0" layoutY="499.0" text="Номер последнего акка" />
+      <TextField fx:id="lastNumber" layoutX="264.0" layoutY="499.0" />
+      <CheckBox fx:id="changeIP" layoutX="33.0" layoutY="301.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="213.0" selected="true" text="Смена ip в начале" />
+      <TextArea fx:id="destGroupList" layoutX="235.0" layoutY="251.0" prefHeight="200.0" prefWidth="273.0" text="\@megaActivity" />
+   </children>
+</AnchorPane>
